@@ -1,16 +1,17 @@
 # Terrain to SQLite
-Convert a directory of terrain tiles to a sqlite database.
+
+Convert a directory of quantized mesh terrain tiles to a sqlite database.
 
 ### How to use
 
 ```
-python terrainsql.py -h
+python terrain_to_sql.cpython-37.pyc -h
 ```
 
 return:
 
 ```
-usage: terrainsql.py [-h] [-d TILE_DIRECTORY] [-o OUTFILENAME]
+usage: terrain_to_sql.cpython-37.pyc [-h] [-d TILE_DIRECTORY] [-o OUTFILENAME]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -23,7 +24,9 @@ optional arguments:
 usage example:
 
 ```
-python terrainsql.py -d terrain -o test.db
+python terrain_to_sql.cpython-37.pyc -d terrain -o test.db
 ```
 
+### things to do
 
+Update the tile spec to copy mbtiles currently just a x, y, z , image(blob) with a index called xyz on the x,y,z fields.
