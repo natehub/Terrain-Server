@@ -27,6 +27,6 @@ usage example:
 python terrain_to_sql.cpython-37.pyc -d terrain -o test.db
 ```
 
-### things to do
+### Things to do
 
 Update the tile spec to copy mbtiles currently just a x, y, z , image(blob) with a index called xyz on the x,y,z fields.
